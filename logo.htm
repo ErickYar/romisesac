@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onLoad="dibujarcanvas();">
+    <canvas id="logo" width="600" height="600"></canvas>
+    
+    <script src="./logo.js"></script>
+</body>
+<!-- <canvas id="miCanvas" width="600" height="600" style="border:1px solid #000000;"></canvas> -->
+<!-- <script>
+    function dibujarTimon() {
+        var canvas = document.getElementById('miCanvas');
+        if (canvas.getContext) {
+            var contexto = canvas.getContext('2d');
+            var centroX = canvas.width / 2;
+            var centroY = canvas.height / 2;
+            var radioExterior = 100; // Radio del círculo externo del timón
+            var radioInterior = 70;  // Radio del círculo central del timón
+            var cantidadDeManijas = 15; // Número de manijas del timón
+            var longitudManija = 30;  // Longitud de cada manija
+            
+            // Dibujar el círculo exterior
+            contexto.beginPath();
+            contexto.arc(centroX, centroY, radioExterior, 0, 2 * Math.PI);
+            contexto.stroke();
+            
+            // Dibujar el círculo central
+            contexto.beginPath();
+            contexto.arc(centroX, centroY, radioInterior, 0, 2 * Math.PI);
+            contexto.stroke();
+            
+            // Dibujar las manijas
+            for (var i = 0; i < cantidadDeManijas; i++) {
+                var angulo = (i * 2 * Math.PI) / cantidadDeManijas;
+                var xInicio = centroX + radioInterior * Math.cos(angulo);
+                var yInicio = centroY + radioInterior * Math.sin(angulo);
+                var xFinal = centroX + (radioInterior + longitudManija) * Math.cos(angulo);
+                var yFinal = centroY + (radioInterior + longitudManija) * Math.sin(angulo);
+                
+                contexto.beginPath();
+                contexto.moveTo(xInicio, yInicio);
+                contexto.lineTo(xFinal, yFinal);
+                contexto.stroke();
+            }
+        } else {
+            alert("Canvas no es soportado por este navegador.");
+        }
+    }
+
+    // Llama a la función para dibujar el timón cuando la página cargue
+    window.onload = dibujarTimon;
+</script> -->
+</body>
+</html>
