@@ -343,7 +343,7 @@ footer {
      }
 .titulo-final {
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     margin: 20px 0 0 0;
     color: #9e9797
 }
@@ -498,7 +498,7 @@ background: #fff;
     }
 
     .titulo-final {
-        font-size: 10px;
+        font-size: 8px;
     }
 }
 

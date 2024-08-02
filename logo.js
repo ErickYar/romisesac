@@ -7,7 +7,6 @@ function dibujarcanvas() {
     contexto.font = "85px Arial";
     contexto.fillStyle = '#006CCC';
     contexto.fillText("ROMISE",30,280);
-    //contexto.fillText("SAC",13,350);
     
     //context.fillStyle = "red";
     // contexto.fillStyle='green';
@@ -36,7 +35,8 @@ function dibujarcanvas() {
     // contexto.lineTo(150, 300);
     // contexto.closePath();
     // contexto.stroke()
-    // angulo con canvas
+    // angulo con canvas//contexto.fillText("SAC",13,350);
+    
 
 
     // contexto.beginPath();
