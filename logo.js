@@ -4,13 +4,9 @@ function dibujarcanvas() {
 
 
 
-    contexto.font = "95px Arial";
+    contexto.font = "85px Arial";
     contexto.fillStyle = '#006CCC';
-    //contexto.setAttribute('width',640);
-    //contexto.setAttribute('height', 300);
-
-    contexto.fillText("ROMISE",13,280);
-   // contexto.lineWidth='10';
+    contexto.fillText("ROMISE",30,280);
     //contexto.fillText("SAC",13,350);
     
     //context.fillStyle = "red";
@@ -135,14 +131,68 @@ function dibujarcanvas() {
     contexto.stroke()
 
 
+// logo mas pequeño
+//la palabra romise
+contexto.font = "50px Arial";
+contexto.fillStyle = '006CCC';
+contexto.fillText("ROMISE",25,540);
+//los arcos del logo
+//1
+contexto.beginPath();
+contexto.strokeStyle = '#006CCC'; //color de la linea
+contexto.arc(125, 500, 96, radian('0'), radian('180'), true)
+contexto.fillStyle = '#006CCC';
+contexto.fill();
+contexto.stroke();
+//2
+contexto.beginPath();
+contexto.arc(125, 500, 82, radian('0'), radian('180'), true)
+contexto.fillStyle = '#ffff';
+contexto.fill();
+contexto.stroke();
 
 
-    
+contexto.beginPath();
+//el punto medio es 125x , 480y
+ contexto.moveTo(99, 410);//inicial
+ contexto.lineTo(115, 435);
+ contexto.lineTo(115, 475);//base izquierda
+ contexto.lineTo(135, 475);//base derecha
+ contexto.lineTo(135, 435);
+contexto.lineTo(151, 410);
+contexto.fillStyle = '#006CCC';
+contexto.fill();
+contexto.stroke()
 
-    // contexto.beginPath();
-    // contexto.arc(350, 60, 50, radian('0'), radian('360'));
-    // contexto.stroke();
 
+
+contexto.beginPath();
+//el punto medio es 126X 
+ //contexto.moveTo(126, 480);//inicial
+//  contexto.lineTo(110, 435);
+ // contexto.lineTo(110, 480);//base izquierda
+// contexto.lineTo(126, 480);//base derecha
+//  contexto.lineTo(132, 435);
+// contexto.lineTo(146, 410);
+//contexto.fillStyle = 'black';
+contexto.fill();
+contexto.stroke()
+
+// triangulo del derecha
+contexto.beginPath();
+// contexto.moveTo(45, 200);
+// contexto.lineTo(150, 130);
+// contexto.lineTo(40, 500);
+contexto.fill();
+contexto.stroke()
+
+// triangulo del izquierda
+contexto.beginPath();
+contexto.moveTo(350, 160);
+contexto.lineTo(250, 130);
+contexto.lineTo(358, 210);
+contexto.fill();
+contexto.stroke()
 
 }
 
@@ -159,6 +209,95 @@ function radian(grados) {
     var radianes = (Math.PI / 180) * grados;
     return radianes
 }
+
+
+
+
+
+
+
+
+
+contexto.beginPath();
+contexto.moveTo(160, 40);
+contexto.lineTo(185, 90);
+contexto.lineTo(185, 160);
+contexto.lineTo(215, 160);
+contexto.lineTo(215, 90);
+contexto.lineTo(240, 40);
+contexto.fillStyle = '#006CCC';
+contexto.fill();
+contexto.stroke()
+
+// triangulo del derecha
+contexto.beginPath();
+contexto.moveTo(45, 160);
+contexto.lineTo(150, 130);
+contexto.lineTo(40, 210);
+contexto.fill();
+contexto.stroke()
+
+// triangulo del izquierda
+contexto.beginPath();
+contexto.moveTo(350, 160);
+contexto.lineTo(250, 130);
+contexto.lineTo(358, 210);
+contexto.fill();
+contexto.stroke()
+
+// lineas de carreteras izquierda
+contexto.beginPath();
+contexto.moveTo(160, 130);
+contexto.lineTo(105, 170);
+contexto.stroke()
+
+contexto.beginPath();
+contexto.moveTo(165, 130);
+contexto.lineTo(90, 200);
+contexto.stroke()
+
+contexto.beginPath();
+contexto.moveTo(170, 130);
+contexto.lineTo(90, 220);
+contexto.stroke()
+
+contexto.beginPath();
+contexto.moveTo(175, 130);
+contexto.lineTo(140, 180);
+contexto.stroke()
+
+// lineas de carreteras derecha
+
+contexto.beginPath();
+contexto.moveTo(240, 130);
+contexto.lineTo(300, 180);
+contexto.stroke()
+
+contexto.beginPath();
+contexto.moveTo(235, 130);
+contexto.lineTo(270, 170);
+contexto.stroke()
+
+contexto.beginPath();
+contexto.moveTo(230, 130);
+contexto.lineTo(290, 210);
+contexto.stroke()
+
+contexto.beginPath();
+contexto.moveTo(225, 130);
+contexto.lineTo(250, 180);
+contexto.stroke()
+
+
+
+
+function radian(grados) {
+var radianes = (Math.PI / 180) * grados;
+return radianes
+}
+
+
+
 
 
 
