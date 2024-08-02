@@ -1,0 +1,30 @@
+los link de la página creada:
+
+Primera parte:
+https://www.youtube.com/watch?v=HH_SMpxV7qQ&t=3s
+
+Segunda parte:
+https://www.youtube.com/watch?v=1Lv8mJczfpg
+
+esta lineas son para los ionicons  que se puede utilizar en tu página web:
+página de los iconos:
+https://boxicons.com/?query=chat
+
+esto se pone en la página que esta creando:
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+
+    paletas de colores:
+    #B38000
+    #008993
+    #005C78
+    #BF6C00
+    #002638
+
+
+    link de los ionicons:
+    https://boxicons.com/?query=chat
+
+este link es para poner una imagen en varias piezas
+https://www.youtube.com/watch?v=PdNOq7VszY8
